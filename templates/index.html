@@ -118,7 +118,7 @@
 
 							var hist_string = "<img class='hist' src='{{url_for('static', filename='blood_hist.png')}}'></img>"
 
-							$('.main_row').append("<div class='card' style='display: none;' id='"+count+"'><p class='tag_heading'>"+$('.tag_text').val()+"</p><div class='row'><img class='main_image col' src='"+img_string+"'></img><div class='caption_container col'><p class='elbo caption_color'>Evidence Lower Bound: "+vlb+"</p><p class='kl caption_color'>KL Divergence: "+kl+"</p><p class='recon caption_color'>Reconstruction Error: "+recon+"</p>"+hist_string+"</div></div></div>");
+							$('.main_row').append("<div class='card' style='display: none;' id='"+count+"'><p class='tag_heading'>"+$('.tag_text').val()+"</p><div class='row'><img class='main_image col' src='"+img_string+"'></img><div class='caption_container col'><p class='elbo caption_color'>Negative Evidence Lower Bound: "+vlb+"</p><p class='kl caption_color'>KL Divergence: "+kl+"</p><p class='recon caption_color'>Reconstruction Error: "+recon+"</p>"+hist_string+"</div></div></div>");
 
 							$('#'+count).slideDown(100);
 							$('html, body').animate({ scrollTop:  $('#'+count).offset().top - 50 }, 'slow');
