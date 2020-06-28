@@ -51,6 +51,35 @@
 			width:30%;
 			margin-left:80px;
 		}
+		.main_image{
+			object-fit: cover;
+			width: 80px;
+			height: auto;
+			padding: 40px;
+			min-width:500px;
+		}
+		.hist{
+			padding-top:30px;
+			object-fit:cover;
+			padding-right:40px;
+			min-width:500px;
+		}
+		@media (max-width: 1300px){
+			.main_image{
+				padding:0px;
+			}
+			.hist{
+				padding:0px;
+			}
+		}
+		@media (max-width: 800px){
+			.main_image{
+				min-width:100%;
+			}
+			.hist{
+				min-width:100%;
+			}
+		}
 		@media (max-width: 598px) {
 			.main_header{
 				padding-top:140px;
@@ -69,9 +98,6 @@
 			hr{
 				margin-left:40px;
 			}
-		}
-		.hist{
-			padding-top:30px;
 		}
 		.elbo{
 			padding-top:30px;
